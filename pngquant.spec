@@ -21,10 +21,12 @@ Such images are fully standards-compliant and supported by all web browsers.
 rmdir lib
 mv libimagequant-* lib
 
+export CC=%{__cc}
+
 # This is the check for OpenMP from lib/configure
 # where its output is hidden. Let's run it here so
 # we can see why it goes wrong (if it does)
-%{__cc} -xc -E -fopenmp <(echo "#include <omp.h>")
+$CC -xc -E -fopenmp <(echo "#include <omp.h>")
 
 # Looks a lot like autoconf but actually isn't
 # Get rid of --quiet for the subdirectory so we can see errors
