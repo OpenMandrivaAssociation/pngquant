@@ -9,6 +9,7 @@ License: GPLv3+ and BSD
 BuildRequires: pkgconfig(libpng)
 BuildRequires: pkgconfig(zlib)
 BuildRequires: pkgconfig(lcms2)
+BuildRequires: openmp-devel
 
 %description
 pngquant converts 24/32-bit RGBA PNG images to high-quality 8-bit palette
