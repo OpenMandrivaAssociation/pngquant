@@ -22,6 +22,7 @@ rmdir lib
 mv libimagequant-* lib
 
 export CC=%{__cc}
+sed -i -e 's,:-gcc,:-%{__cc},g' lib/configure
 
 # This is the check for OpenMP from lib/configure
 # where its output is hidden. Let's run it here so
