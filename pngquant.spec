@@ -1,6 +1,6 @@
 Name: pngquant
 Version: 2.17.0
-Release: 1
+Release: 2
 Source0: https://github.com/kornelski/pngquant/archive/%{version}.tar.gz
 Source1: https://github.com/ImageOptim/libimagequant/archive/a6cc4ade66710ec799ca41297f6d2c2b4070d0ff.tar.gz
 Summary: PNG quantization tool for reducing image file size
