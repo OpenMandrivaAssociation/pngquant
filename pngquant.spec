@@ -6,6 +6,11 @@ Source1: https://github.com/ImageOptim/libimagequant/archive/a6cc4ade66710ec799c
 Summary: PNG quantization tool for reducing image file size
 URL: https://pngquant.org/
 License: GPLv3+ and BSD
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(libpng)
 BuildRequires: pkgconfig(zlib)
 BuildRequires: pkgconfig(lcms2)
